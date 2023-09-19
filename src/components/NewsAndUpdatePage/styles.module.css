@@ -1,0 +1,422 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.parent{
+    font-family: "Amazon Ember",Arial,sans-serif;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    /* border: 2px solid red; */
+
+    width: 1450px;
+    background-color: white;
+    position: relative;
+    /* z-index: -1; */
+    /* height: 100vh;
+    overflow: scroll; */
+}
+
+/* main::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: url("https://images5.alphacoders.com/115/1151026.jpg");
+    background-repeat: no-repeat;
+  
+    z-index: 1;
+    opacity: 0.8;
+} */
+.header{
+    /* border: 1px solid blue; */
+    /* width: 100%; */
+    color: black;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    z-index: 5;
+    position: sticky;
+    top: 0;
+    background-color:whitesmoke;
+    box-shadow: 0px 2px 2px gray;
+    border-radius: 0px 0px 10px 10px;
+
+}
+.header_img img{
+    height: 80px;
+    margin-right: 10px;
+    /* filter: invert(100%); */
+}
+.heading{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.heading p{
+
+  color: rgb(55, 55, 55);
+  font-size: 12px;
+}
+.nav_right{
+    /* border: 2px solid orange; */
+    position: absolute;
+    right: 15px;
+    height: inherit;
+    display: flex;
+    align-items: center;
+    /* width: 100px; */
+}
+.nav_right div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 15px;
+    cursor: pointer;
+}
+.user img{
+    height: 45px;
+    border-radius: 100%;
+}
+.notification img{
+    height: 25px;
+}
+
+.mini_navbar{
+    /* border: 2px solid red; */
+    /* height: 20px; */
+    display: flex;
+    position: relative;
+    align-items: flex-end;
+    /* padding: 0px 35px 0px 35px; */
+}
+.mini_navbar button{
+    font-size: 14px;
+    position: absolute;
+    right: 35px;
+    bottom: 8px;
+    color: white;
+    background: linear-gradient(to right, rgb(0, 0, 0), rgb(87, 87, 87));
+    padding: 8px 15px;
+    border-radius: 8px;
+    border: none;
+    box-shadow: 0px 1px 2px black;
+    /* background: none; */
+}
+.nav_items{
+    display: flex;
+    align-items: center;
+    margin: 20px 0px 5px 35px;
+    border-bottom: 1px solid rgb(179, 179, 179);
+    width: 23%;
+    /* color: gray; */
+}
+.nav_item{
+    list-style: none;
+    /* border: 1px solid green; */
+    margin: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(83, 83, 83);
+ 
+}
+.nav_item:hover{
+    color: black;
+}
+.nav_items a{
+    text-decoration: none;
+    color: black;
+    
+}
+a:visited{
+    color: black;
+}
+.navItemLocation{
+    display: flex;
+    align-items: center;
+    /* border: 2px solid red; */
+    height: 20px;
+    cursor: pointer;
+    /* margin: 0px 5px; */
+}
+.navItemLocation>img{
+    height: inherit;
+    margin: 0px 5px 0px 0px;
+}
+
+.pageContent{
+    /* border: 2px solid green; */
+    /* height: inherit; */
+    display: flex;
+}
+.contentSection{
+    /* border: 2px solid red; */
+    width: 100%;
+    padding: 0px 30px;
+}
+.leftSection{
+    width: 250%;
+}
+
+.newsCardArea{
+    /* border: 2px solid blue; */
+    height: 100%;
+}
+
+.newsCard {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    /* border: 2px solid green; */
+    margin: 4px 4px 15px 4px;
+    border-radius: 10px;
+    height: 450px;
+    overflow: hidden;
+    color: white;
+    box-shadow: 0px 1px 4px rgb(66, 66, 66);
+    transition: transform 0.2s ease-in-out;
+    z-index: 1;
+  }
+  .newsCard:hover{
+    transform: scale(1.005);
+    cursor: pointer;
+ }
+  
+  .newsCard1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1)),
+                      url("https://resources.esportsinsider.com/esportsinsider/2022/09/FuFtbzPX0AIpU5M.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+  }
+  .newsCard2::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1)),
+                      url("https://assets-webp.khelnow.com/news/uploads/2023/08/master-s-4.jpg.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+  }
+  .newsCard3::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1)),
+                      url("https://gumlet.assettype.com/afkgaming%2F2023-01%2F6e58957f-0d11-4ea7-b0cd-bfde3b967869%2FCover_Image___Indian_Esports_Tournaments_We_Can_Expect_In_2023.jpg?w=1200&auto=format%2Ccompress&ogImage=true&enlarge=true");
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+  }
+
+
+.newsCardContent{
+    margin: 10px 20px;
+}
+.aboutNews{
+    /* border: 2px solid red; */
+   
+    
+    >h1{
+        /* border: 2px solid blue; */
+        margin-bottom: 10px;
+    }
+
+    >p{
+      /* border: 2px solid red; */
+      word-spacing: 1px;
+      font-size: 15px;
+      height: 40px;
+      overflow: hidden;
+      color: rgb(236, 236, 236);
+    }
+    >button{
+        background: none;
+        border: none;
+        color: white;
+        font-weight: bold;
+        cursor: pointer;
+    }
+}
+.newsSource{
+    /* border: 1px solid greenyellow; */
+    margin: 7px 0px 20px -5px;
+    >h4{
+        display: inline-block;
+        border: 2px solid rgb(193, 106, 106);
+        padding: 5px 10px;
+        border-radius: 50px;
+        /* z-index:12 ; */
+        background: linear-gradient(to right, rgb(240, 9, 5), rgb(154, 75, 132));
+        cursor: pointer;
+    }
+}
+
+.newsCardFooter{
+    display: flex;
+    /* border: 1px solid red; */
+}  
+.cardAction{
+    width: 100%;
+}
+.cardAction button{
+    border: none;
+    background: none;
+    color: white;
+    margin: 0px 5px;
+    cursor: pointer;
+}
+.cardAction button img{
+    filter: invert(100%);
+    height: 22px;
+}
+.cardAction button:nth-child(2){
+    /* border: 1px solid white; */
+    transform: scaleY(-1);
+}
+.newsTime{
+    /* border: 2px solid green; */
+    font-size: 13px;
+    font-weight: bold;
+    display: flex;
+    width: 100%;
+    justify-content: end;
+}
+
+
+
+
+.rightSection{
+   display: flex;
+   flex-direction: column;
+   padding: 6px 30px 0px 0px;
+   opacity: 0.99;
+   /* height: 680px; */
+   
+   /* border: 2px solid red; */
+}
+.rightContent{
+    /* border: 2px solid blue; */
+    height: 100%;
+    border-radius: 10px;
+    background-color: rgb(246, 246, 246);
+    box-shadow: 0px 1px 3px rgb(161, 161, 161);
+    margin-bottom: 20px;
+    z-index: 1;
+    /* color: white; */
+    /* opacity: 0.4; */
+   
+}
+.rightHeader{
+    /* border: 2px solid red; */
+    margin: 10px 15px;
+    padding-bottom: 10px;
+}
+.tournamentsBoxes{
+    /* border: 2px solid green; */
+    /* height: 200px; */
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+   
+    /* overflow: scroll; */
+}
+.tournamentsBoxHeading{
+    /* border: 1px solid black; */
+    padding: 0px 15px;
+    padding-bottom: 5px;
+    color: rgb(135, 135, 135);
+}
+.tournamentsBoxContent{
+    /* height: inherit; */
+    /* border: 2px solid cyan; */
+    height: 100%;
+}
+.boxSmall{
+      /* border: 2px solid red; */
+      border-top: 1px solid rgb(145, 145, 145);
+      border-bottom: 1px solid rgb(145, 145, 145);
+   height: 75px;
+   background-color: rgb(236, 236, 236);
+   display: flex;
+   align-items: center;
+}
+
+.boxImage{
+    /* border: 2px solid green; */
+    width: 45px;
+    height: 45px;
+    margin: 0px 15px;
+   
+}
+.boxImage img{
+    height: 100%;
+    border-radius: 5px;
+    /* filter: invert(100%); */
+}
+
+.boxContent{
+    /* border: 2px solid green; */
+    height: 65px;
+    width: 100%;
+    padding: 4px 3px;
+    color: rgb(76, 76, 76);
+}
+.boxContent>div{
+    /* border: 1px solid red; */
+    height: 25px;
+    width: 275px;
+    overflow: hidden;
+ 
+}
+.boxIcon{
+    /* border: 1px solid blue; */
+    height: inherit;
+    width: 10%;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+}
+.boxIcon img{
+    height: 20px;
+    cursor: pointer;
+}
+
+/* ::-webkit-scrollbar {
+    border-radius: 8px;
+    width: 7px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    width: 1px;
+    border-radius: 8px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #b4b4b4;
+    border-radius: 5px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #919090;
+  }
+
+  ::-webkit-scrollbar-track:horizontal {
+    display: none;
+  } */
