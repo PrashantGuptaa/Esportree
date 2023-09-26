@@ -1,35 +1,22 @@
-import { Search, SettingsInputAntenna } from "@mui/icons-material";
-import React, { useEffect, useRef, useState } from "react";
-import {
-  AiFillHome,
-  AiFillMessage,
-  AiOutlineClose,
-  AiOutlineShoppingCart,
-} from "react-icons/ai";
+import React, { useState } from "react";
 import LandingMobileNavBarRight from '../NavBarRight/LandingMobileNavbarRight'
 import { useMediaQuery } from "@mui/material";
 import logo from "../../pictures/logo.png";
-import { GiFireDash, GiPayMoney } from "react-icons/gi";
-import { CiStreamOn } from "react-icons/ci";
+
 import logoLight from "../../pictures/Logolight.png";
-import { IoNotificationsSharp } from "react-icons/io5";
 import LandingNavBarRight from './LandingNavBarRight'
-import { BsPersonFill, BsFillMoonFill } from "react-icons/bs";
-import { IoSettings } from "react-icons/io5";
-import { BsFillSunFill } from "react-icons/bs";
+
 import { Link, useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
-import { changeMenuBottomBorder, changeMode } from "../../counter/CounterSlice";
-import orton from "../../pictures/orton.jpg";
-import NavBarRight from "../NavBarRight/NavBarRight";
+import {  changeMode } from "../../counter/CounterSlice";
+
 import {
-  BiDotsVerticalRounded,
+
   BiMoneyWithdraw,
   BiNews,
-  BiSolidMessageAltDetail,
+
 } from "react-icons/bi";
-import { FaMoneyBillTransfer } from "react-icons/fa6";
-import MobileNavRight from "../NavBarRight/MobileNavRight";
+
 import './landingNavBar.css'
 const Navbar = () => {
   // const [active, setActive] = useState(false);

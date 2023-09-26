@@ -1,12 +1,10 @@
 import * as React from "react";
 import {
-  Games,
-  GamesOutlined,
-  MessageOutlined,
+
   Money,
   OnlinePrediction,
   Person,
-  Settings,
+
 } from "@mui/icons-material";
 
 import {
@@ -15,14 +13,11 @@ import {
   Button,
   List,
   Divider,
-  ListItem,
-  ListItemButton,
-  ListItemIcon,
-  ListItemText,
+
   useMediaQuery,
   Avatar,
 } from "@mui/material";
-import { Bs123, BsFillMoonFill, BsFillSunFill } from "react-icons/bs";
+import { BsFillMoonFill, BsFillSunFill } from "react-icons/bs";
 import { ImStatsBars2 } from "react-icons/im";
 import { FaUserGraduate } from "react-icons/fa";
 import { FaRankingStar } from "react-icons/fa6";
@@ -31,15 +26,13 @@ import { GrAchievement } from "react-icons/gr";
 import { MdAttachMoney } from "react-icons/md";
 import { BsStars, BsEraserFill } from "react-icons/bs";
 
-import InboxIcon from "@mui/icons-material/MoveToInbox";
-import MailIcon from "@mui/icons-material/Mail";
 import MenuIcon from "@mui/icons-material/Menu";
 import { styled } from "@mui/material";
 import { useDispatch, useSelector } from "react-redux";
 import profile from "../pictures/profile.jpg"
-import { AiFillNotification } from "react-icons/ai";
+
 import { IoNotificationsSharp, IoSettings } from "react-icons/io5";
-import { UseSelector } from "react-redux";
+
 import { changeMode } from "../counter/CounterSlice";
 const EachButton = styled(Button)`
   width: 90%;

@@ -1,34 +1,24 @@
-import { Search, SettingsInputAntenna } from "@mui/icons-material";
-import React, { useEffect, useRef, useState } from "react";
+import React, { useState } from "react";
 import {
   AiFillHome,
-  AiFillMessage,
-  AiOutlineClose,
-  AiOutlineShoppingCart,
 } from "react-icons/ai";
 import { useMediaQuery } from "@mui/material";
 import logo from "../../pictures/logo.png";
-import { GiFireDash, GiPayMoney } from "react-icons/gi";
-import { CiStreamOn } from "react-icons/ci";
+
 import logoLight from "../../pictures/Logolight.png";
-import { IoNotificationsSharp } from "react-icons/io5";
 import {GoOrganization} from "react-icons/go"
-import { BsPersonFill, BsFillMoonFill } from "react-icons/bs";
-import { IoSettings } from "react-icons/io5";
-import { BsFillSunFill } from "react-icons/bs";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
-import { changeMenuBottomBorder, changeMode } from "../../counter/CounterSlice";
-import orton from "../../pictures/orton.jpg";
+import { changeMode } from "../../counter/CounterSlice";
+
 import NavBarRight from "../NavBarRight/NavBarRight";
 import {
   BiDotsVerticalRounded,
-  BiMoneyWithdraw,
-  BiNews,
+
   BiSolidMessageAltDetail,
   BiSolidServer,
 } from "react-icons/bi";
-import { FaMoneyBillTransfer } from "react-icons/fa6";
+
 import MobileNavRight from "../NavBarRight/MobileNavRight";
 import { MdGroups2 } from "react-icons/md";
 import { GrOrganization } from "react-icons/gr";

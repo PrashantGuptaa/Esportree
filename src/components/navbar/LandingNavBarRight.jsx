@@ -1,16 +1,10 @@
 import React from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
-import { changeMenuBottomBorder, changeMode } from "../../counter/CounterSlice";
-import { AiOutlineShoppingCart } from "react-icons/ai";
+import { changeMode } from "../../counter/CounterSlice";
+
 import './landingNavBar.css'
-import orton from "../../pictures/orton.jpg";
 
-import { IoNotificationsSharp } from "react-icons/io5";
-
-import { BsPersonFill, BsFillMoonFill } from "react-icons/bs";
-import { IoSettings } from "react-icons/io5";
-import { BsFillSunFill } from "react-icons/bs";
 const NavBarRight = () => {
   const obj = useSelector((state) => state.CounterSliceReducer);
   //console.log(obj.bottomBorderNumber);
