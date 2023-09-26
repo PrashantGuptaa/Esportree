@@ -1,15 +1,13 @@
-import logo from './logo.svg';
 import './App.css';
-import LandingNavBar from './components/navbar/LandingNavBar'
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Home from './containers/home';
 import AboutUs from './containers/aboutUs';
-import { Fragment, useEffect, useState } from "react";
-import { useNavigate } from 'react-router-dom';
+import { useEffect, useState } from "react";
+
 import {  Outlet,  } from "react-router-dom";
 import { useMediaQuery } from "@mui/material";
 import Esportree from "./pages/Esportree";
-import { useDispatch, useSelector } from "react-redux";
+import {  useSelector } from "react-redux";
 import 'tailwindcss/tailwind.css'
 
 function App() {

@@ -1,20 +1,15 @@
-import { useMediaQuery } from "@mui/material";
-import React, { useState } from "react";
-import MobileDrawer from "../MobileDrawer";
-import { BsPersonFill, BsFillMoonFill } from "react-icons/bs";
-import { IoSettings } from "react-icons/io5";
-import { BsFillSunFill } from "react-icons/bs";
+
+import React from "react";
+
 import { useDispatch, useSelector } from "react-redux";
 import logo from "../../pictures/logo.png"
 import {
-  changeLeftMenu,
-  changeMenuBottomBorder,
+
   changeMode,
 } from "../../counter/CounterSlice";
-import { IoNotificationsSharp } from "react-icons/io5";
-import orton from "../../pictures/orton.jpg";
+
 import { useNavigate } from "react-router-dom";
-import { GiFireDash } from "react-icons/gi";
+
 
 import NavBarRight from "../NavBarRight/NavBarRight";
 const MobileNavParent = () => {
