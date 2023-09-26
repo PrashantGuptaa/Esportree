@@ -1,5 +1,8 @@
+import LandingNavBar from '../../components/navbar/LandingNavBar'
 const Home = () => {
-    return ( <h1>Home</h1> );
+    return ( 
+        <LandingNavBar />
+     );
 }
  
 export default Home;
